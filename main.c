@@ -1,10 +1,10 @@
 #include "monty.h"
-
+#include "opcodes.h"
 /**
-  *process_line - Process single line of bytecode
-  *@line: line to be processed
-  *@stack: Pointer to stack
-  *@line_number: line number
+  *process_line - Process a single line of bytecode
+  *@line: The line to process
+  *@stack: Pointer to the stack
+  *@line_number: The line number
   */
 void process_line(char *line, unsigned int *line_number, stack_t **stack)
 {
@@ -37,10 +37,10 @@ void process_line(char *line, unsigned int *line_number, stack_t **stack)
 	}
 }
 /**
- * main - Monty interpreter entry point
- * @argc: number of command-line arguments
- * @argv: array with command-line arguments
- * Return: EXIT_SUCCESS on success, EXIT_FAILURE on failure
+ * main - Entry point of the Monty interpreter.
+ * @argc: The number of command-line arguments.
+ * @argv: An array containing the command-line arguments.
+ * Return: EXIT_SUCCESS on success, EXIT_FAILURE on failure.
  */
 int main(int argc, char *argv[])
 {
