@@ -1,5 +1,5 @@
 #include "monty.h"
-#include "opcodes.h"
+
 /**
   *process_line - Process single line of bytecode
   *@line: line to be processed
